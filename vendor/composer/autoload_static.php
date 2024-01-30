@@ -4,23 +4,19 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc73f7e4d79ae540e5fbf1f0646aba9ae
+class ComposerStaticInitb3c4a292d48f8f4671fbdd3cab1f1b19
 {
-    public static $files = array (
-        '9e4824c5afbdc1482b6025ce3d4dfde8' => __DIR__ . '/..' . '/league/csv/src/functions_include.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
-        'L' => 
+        'P' => 
         array (
-            'League\\Csv\\' => 11,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'League\\Csv\\' => 
+        'PHPMailer\\PHPMailer\\' => 
         array (
-            0 => __DIR__ . '/..' . '/league/csv/src',
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
     );
 
@@ -31,9 +27,9 @@ class ComposerStaticInitc73f7e4d79ae540e5fbf1f0646aba9ae
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc73f7e4d79ae540e5fbf1f0646aba9ae::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc73f7e4d79ae540e5fbf1f0646aba9ae::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitc73f7e4d79ae540e5fbf1f0646aba9ae::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb3c4a292d48f8f4671fbdd3cab1f1b19::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb3c4a292d48f8f4671fbdd3cab1f1b19::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitb3c4a292d48f8f4671fbdd3cab1f1b19::$classMap;
 
         }, null, ClassLoader::class);
     }

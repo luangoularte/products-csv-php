@@ -1,6 +1,6 @@
 {
     "require":
     {
-        "league/csv" : "9.14.0"
+        "phpmailer/phpmailer": "^6.9.1"
     }
 }
